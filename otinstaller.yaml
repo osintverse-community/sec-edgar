@@ -42,7 +42,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/sec-edgar@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/sec-edgar@sha256:5f0972595232d0199e3eb3cb4bde53151d9c16064d229168332325bb9c4b7009
   platforms: [linux/amd64, linux/arm64]
   command: ["sec-edgar", "{company}", "--limit", "{limit}", "--filings", "{filings}"]
   output_format: json
